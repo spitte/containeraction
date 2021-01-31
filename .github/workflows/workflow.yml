@@ -7,7 +7,7 @@ jobs:
     steps:
       -uses:action/checkout@v2
       -name:run the action
-       id: hello
+      id:hello
        uses: ./
        with:
         myInput:'jocke'
