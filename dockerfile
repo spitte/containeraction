@@ -1,7 +1,7 @@
 FROM debian:9.5-slim
 
-ADD ENTRYPOINT.SH /ENTRYPOINT.SH
+ADD entrypoint.sh /entrypoint.sh
 
-run chmod +x /ENTRYPOINT.SH
+RUN chmod +x /entrypoint.sh
 
-ENTRYPOINT["/ENTRYPOINT.SH"]
+ENTRYPOINT ["/entrypoint.sh"]
