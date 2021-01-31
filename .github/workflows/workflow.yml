@@ -8,10 +8,10 @@ jobs:
       -uses:action/checkout@v2
       -name:run the action
       id:hello
-       uses: ./
-       with:
+      uses:./
+      with
         myInput:'jocke'
       -name:output
-       run: |
+       run:|
        echo ${{ steps.hello.outputs.memory }}
        echo 'total memory'
