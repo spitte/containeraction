@@ -1,0 +1,15 @@
+name: 'my first container action'
+description: 'acloud guru'
+author:jocke
+
+inputs:
+  myinput:
+    descriptiopn:'use me'
+    required:'true'
+    default:'awesome guru'
+outputs: 
+  myoutput:
+    descriptiopn:'total memory'
+  runs:
+    using: 'docker'
+    image: 'dockerfile'
